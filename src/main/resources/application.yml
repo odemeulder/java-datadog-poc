@@ -1,0 +1,8 @@
+datadog.apiKey: fd0bbed2e0ffb2d4adced03ff16059fb
+
+# You will probably want disable Atlas publishing in a local development profile.
+datadog.enabled: true
+
+# The interval at which metrics are sent to Datadog. See Duration.parse for the expected format.
+# The default is 10 seconds, which matches the Datadog Agent publishes at.
+datadog.step: PT10S
