@@ -15,15 +15,11 @@ import org.springframework.stereotype.Component;
 @RestController
 public class PersonController {
     
+    @Autowired
     private PersonRepository repository;
 
     @Autowired
     private MetricsInterface metrics;
-    
-    PersonController(PersonRepository repo, MetricsInterface m) {
-      this.repository = repo;
-      this.metrics = m;
-    }
 
     @GetMapping("/persons")
     List<Person> all() {
